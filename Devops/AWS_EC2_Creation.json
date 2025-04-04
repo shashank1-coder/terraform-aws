@@ -1,0 +1,19 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Sample EC2 instance using CloudFormation",
+    "Resources": {
+        "EC2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "ImageId": "ami-0c1ac8a41498c1a9c",  
+                "InstanceType": "t3.micro",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "Jenkins-CF-Instance"
+                    }
+                ]
+            }
+        }
+    }
+}
